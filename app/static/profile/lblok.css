@@ -1,0 +1,84 @@
+.left-block{
+    height: 100%;
+    width: 15%;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.logo{
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.logo a{
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    font-size: 27px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.logo p{
+    text-shadow: 0px 0px 3px#FFD5E3;;
+    color: #FFD5E3;
+}
+
+.menu{
+    display: block;
+}
+
+.menu ul{
+    z-index: 1;
+    display: block;
+    list-style: none;
+}
+
+.menu ul li{
+    margin: 5px 15px;
+}
+
+.menu ul li a{
+    border-radius: 25px;
+    display: flex;
+    color: grey;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.menu a img{
+    opacity: 0.25;
+    margin-right: 6px;
+    width: 40px;
+    height: 40px;
+}
+
+.menu a:hover img{
+    opacity: 0.6;
+}
+
+.menu a:hover{
+    background-color: rgba(128, 128, 128, 0.1);
+}
+
+.menu ul li a:focus img{
+    opacity: 0.6;
+}
+
+.menu ul li a:focus{
+    background-color: rgba(128, 128, 128, 0.24);
+}
+
+.menu p{
+    width: 100%;
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    opacity: 0.2;
+}

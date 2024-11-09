@@ -1,0 +1,108 @@
+@media (max-width: 1600px) {
+    .rigth-block img {
+        max-width: 35%;
+    }
+}
+
+@media (max-width: 1440px) {
+    .rigth-block img {
+        max-width: 33%;
+    }
+
+    .footer-container {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #login {
+        margin-left: 0;
+    }
+
+    .button-left-block {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .button-left-block a, button {
+        height: 50px;
+    }
+
+    .left-block {
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .rigth-block {
+        display: none;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links li, .footer-socials li {
+        margin: 10px 0;
+    }
+
+    .menu-header {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        width: auto;
+        padding: 15px;
+        margin: 0 30px;
+        max-width: none;
+        gap: 30px;
+    }
+
+    .menu-left, .menu-right {
+        padding: 15px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 425px) {
+    button, a {
+        font-size: 14px;
+    }
+
+    .menu {
+        padding: 10px;
+        gap: 20px;
+    } 
+
+    .menu-left, .menu-right {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .left-block {
+        font-size: 18px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .footer-logo {
+        font-size: 14px;
+    }
+
+    .footer-tagline {
+        font-size: 12px;
+    }
+
+    .footer-links {
+        font-size: 12px;
+    }
+}
