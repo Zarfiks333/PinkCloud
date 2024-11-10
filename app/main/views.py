@@ -7,11 +7,11 @@ import vk_api
 import re
 
 def get_vk_posts():
-    vk_session = vk_api.VkApi(token='210b5098210b5098210b50980522281f752210b210b509846254811585aea64acb4aafa')
+    vk_session = vk_api.VkApi(token='')
     vk = vk_session.get_api()
     
-    group_id = '220027850'
-    group_teg = 'moredevit'
+    group_id = ''
+    group_teg = ''
     posts = vk.wall.get(owner_id='-' + group_id, count=3, extended=1)['items']
 
     result = []
