@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+
+{% block newsvk %}
+
+<div class="new-vk-wj">
+    <div class="f2-s1"></div>
+    <div class="block-wj">
+        <h2>Последние посты<br> из группы ВК</h2>
+        <div class="wj">
+            <div class="main-post">
+                <div class="main-block-post">
+                    <a href="{{ posts.0.link }}" target="_blank">
+                        <div class="main-post-block" style="background-image: url('{{ posts.0.photos.0 }}');  position: relative;">
+                            <div class="text">
+                                <h3>{{ posts.0.title }}</h3>
+                                <p>{{ posts.0.description }}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="side-posts">
+                    {% for post in posts|slice:"1:" %}
+                    <div class="block-post">
+                        <a href="{{ post.link }}" target="_blank">
+                            {% for photo in post.photos %}
+                            <div class="side-post-block" style="background-image: url('{{ photo }}');">
+                                <div class="text">
+                                    <h3>{{ post.title }}</h3>
+                                    <p>{{ post.description }}</p>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </a>
+                    </div>
+                    {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock newsvk %}

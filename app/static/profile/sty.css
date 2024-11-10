@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Geologica:wght@100..900&family=Roboto+Slab:wght@100..900&family=Rowdies:wght@300;400;700&family=Rubik+Mono+One&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: "Geologica", sans-serif;
+    color: white;
+    background-color: #1e161a;
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+body::-webkit-scrollbar{
+    width: 1px;             
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e161a00;   
+}
+
+.blur-f-1{
+    position: fixed;
+    height: 500px;
+    width: 250px;
+    border-radius: 50%;
+    left: 86%;
+    background-repeat: no-repeat;
+    background-color: #46373A;
+    background-size: 100%;
+    filter: blur(110px);
+}
